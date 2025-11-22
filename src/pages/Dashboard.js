@@ -42,7 +42,7 @@ const Dashboard = () => {
 
     const fetchStats = async () => {
         try {
-            const res = await axios.get('http://localhost:5001/api/dashboard/stats');
+            const res = await axios.get('https://stockmaster-backend-1oxp.onrender.com/api/dashboard/stats');
             setStats(res.data);
         } catch (err) {
             console.error("Error fetching stats:", err);
