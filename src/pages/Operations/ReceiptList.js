@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { FaSearch, FaPlus, FaEdit, FaTrash } from "react-icons/fa";
 
-const API = "http://localhost:5001/api";
+const API = "https://stockmaster-backend-1oxp.onrender.com/api";
 
 function ReceiptList() {
   const [receipts, setReceipts] = useState([]);
