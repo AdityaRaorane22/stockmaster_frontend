@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { FaSearch, FaArrowRight, FaHistory, FaFilter } from "react-icons/fa";
 
-const API = "http://localhost:5001/api";
+const API = "https://stockmaster-backend-1oxp.onrender.com/api";
 
 function MoveHistory() {
   const [moves, setMoves] = useState([]);
