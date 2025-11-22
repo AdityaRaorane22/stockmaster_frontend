@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { FaBox, FaTruck, FaExclamationTriangle, FaCalendarAlt, FaUser } from "react-icons/fa";
 
-const API = "http://localhost:5001/api";
+const API = "https://stockmaster-backend-1oxp.onrender.com/api";
 
 const priorityColors = {
     late: "#ef4444",
