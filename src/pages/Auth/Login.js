@@ -12,7 +12,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post('http://localhost:5001/api/auth/login', { email, password });
+      const { data } = await axios.post('https://stockmaster-backend-1oxp.onrender.com/api/auth/login', { email, password });
       localStorage.setItem('token', data.token);
       localStorage.setItem('userInfo', JSON.stringify(data));
       navigate('/dashboard');
