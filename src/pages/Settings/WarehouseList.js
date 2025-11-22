@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { FaPlus, FaEdit, FaTrash, FaSearch, FaBuilding } from "react-icons/fa";
 
-const API = "http://localhost:5001/api";
+const API = "https://stockmaster-backend-1oxp.onrender.com/api";
 
 function WarehouseList() {
   const [warehouses, setWarehouses] = useState([]);
