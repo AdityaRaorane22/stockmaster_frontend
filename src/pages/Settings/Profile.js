@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { FaUserCircle, FaEnvelope, FaIdBadge } from "react-icons/fa";
 
-const API = "http://localhost:5001/api";
+const API = "https://stockmaster-backend-1oxp.onrender.com/api";
 
 function Profile() {
     const [user, setUser] = useState(null);
