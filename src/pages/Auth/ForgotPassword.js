@@ -11,7 +11,7 @@ const ForgotPassword = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:5001/api/auth/forgot-password', { email });
+            await axios.post('https://stockmaster-backend-1oxp.onrender.com/api/auth/forgot-password', { email });
             alert('OTP sent to your email (Check console for demo)');
             navigate('/reset-password', { state: { email } });
         } catch (error) {
