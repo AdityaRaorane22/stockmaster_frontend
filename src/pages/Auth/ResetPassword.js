@@ -28,7 +28,7 @@ const ResetPassword = () => {
         }
 
         try {
-            await axios.post('http://localhost:5001/api/auth/reset-password', { email, otp, newPassword });
+            await axios.post('https://stockmaster-backend-1oxp.onrender.com/api/auth/reset-password', { email, otp, newPassword });
             alert('Password reset successful! Please login.');
             navigate('/login');
         } catch (error) {
